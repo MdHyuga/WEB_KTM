@@ -1,0 +1,168 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Banner */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                url('https://images.unsplash.com/photo-1470252649358-96f3e8053119?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+
+/* Card Wrapper */
+.card-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    transform: translateY(150px); /* Đẩy card xuống dưới đè lên phần trắng */
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    flex: 1;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.blue-bg { background-color: #00a8ff; }
+.green-bg { background-color: #2ecc71; }
+.orange-bg { background-color: #fbc531; }
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Buttons chung */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-blue { background-color: #00a8ff; }
+.btn-green { background-color: #2ecc71; }
+.btn-orange { background-color: #fbc531; }
+
+/* Basic Elements Section */
+.basic-elements {
+    margin-top: 250px; /* Tạo khoảng trống vì card bị đẩy xuống */
+}
+
+.basic-elements h2 {
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.btn-outline-blue {
+    padding: 10px 20px;
+    border: 1px solid #00a8ff;
+    background: transparent;
+    color: #00a8ff;
+    border-radius: 4px;
+}
+
+.btn-filled-blue {
+    padding: 10px 20px;
+    background: #00a8ff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn-round {
+    padding: 10px 25px;
+    border: 1px solid #00a8ff;
+    color: #00a8ff;
+    border-radius: 30px;
+    background: white;
+}
+
+.btn-icon {
+    padding: 10px 20px;
+    background: #00a8ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn-circle-heart {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #00a8ff;
+    color: white;
+    border: none;
+}
+
+.simple-link {
+    text-decoration: none;
+    color: #00a8ff;
+    font-size: 0.9rem;
+}
+
+/* Link Row */
+.link-row {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.p-link { color: #00a8ff; }
+.s-link { color: #888; }
+.suc-link { color: #2ecc71; }
+.dan-link { color: #e74c3c; }
+.war-link { color: #f1c40f; }
